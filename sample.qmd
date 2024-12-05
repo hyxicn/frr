@@ -1,0 +1,9 @@
+# Sample {.unnumbered}
+
+Here, I will describe how I construct our sample and include details about data preprocessing.
+
+```{r}
+library(DT)
+datatable(mtcars)
+```
+

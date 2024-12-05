@@ -1,9 +1,22 @@
-# Preface {.unnumbered}
+Website updated on 04 Dec 2024.
 
-This is a Quarto book.
+This website serves both as a platform for updates to supervisors and records of the financial misconduct research project by Yanxi at Singapore Management University. I am grateful for feedback, and if you find errors, please let me know.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This website is generated with [Quarto](https://quarto.org/) and hosted on GitHub Page.
 
-```{r}
-1 + 1
-```
+## Research Progress {.unnumbered}
+
+1.  Research proposal
+2.  Term paper presentation on ACCT702 (Fall 2024)
+3.  First draft
+    -   Replicate prior studies (**ongoing**)
+    -   Clean AAER filings
+    -   Prepare data tables
+    -   Test models
+
+## Discussion
+
+Next discussion is scheduled on: MM/DD/YY
+
+
+

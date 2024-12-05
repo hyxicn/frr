@@ -1,0 +1,91 @@
+# Replications {.unnumbered}
+
+Here I will present the results of replications. The results are arranged in chronological order. The journals include CAR(1), TAR(1), JAR(2), MS(1).
+
+```{r echo=FALSE}
+# Load the DT library
+library(DT)
+
+# Create a data frame with the data
+table <- data.frame(
+  Paper = c("Cecchini et al. (2010)", "Dechow et al. (2011)", 
+            "Perols et al. (2017)", "Bao et al. (2020)", "Brown et al. (2020)"),
+  Journal = c("MS","CAR","TAR","JAR","JAR"),
+  "Imbalance ratio" = c(0.030, 0.004,0.003,0,0 ),
+  "P:N" = c("255:6,427","357:88,032","51:15,934"," "," "),
+  "No. AAERs" = c("1,157", "2,190", NA, "", ""),
+  "Start date" = c("10/28/1999","05/17/1985","10/1988","05/17/1982",""),
+  "End date" = c("07/11/2006","06/10/2005","10/2005","11/31/2018",""),
+  "Type of Predictors" = c("Number","","","",""),
+  check.names = FALSE
+)
+
+# Render the interactive table
+datatable(
+  table,
+  options = list(
+    pageLength = 5, # Number of rows per page
+    autoWidth = TRUE
+  ),
+  caption = "Prior studies using AAERs" # Table caption
+)
+```
+
+## Cecchini et al. (2010)
+
+I revisited this paper because Bao et al. (2020) selected their features based on it and Dechow's paper.
+
+The ﬁrst AAER available was #1,190 (issued October 28, 1999) and the last was #2,459 (issued July 11, 2006). There were a total of 1,157 AAERs in the initial sample.
+
+205 fraud company-years spanning the years of 1991–2003
+
+## Dechow et al. (2011)
+
+This is where F-score originally from.
+
+We catalog all the AAERs from AAER 1 through AAER 2261 spanning May 17th, 1982 through June 10th, 2005.
+
+The original AAERs are the starting point for collecting data. Copies of the AAERs are obtained from the SEC website and the LexisNexis database. Each AAER is separately examined to identify whether it involves an alleged GAAP violation. In cases where a GAAP violation is involved, the reporting periods that were alleged to be misstated are identiﬁed.
+
+Dechow et al. [2011, table 3] suggest four types of fraud determinants: (1) “accruals quality-related variables”: nine variables, which can be calculated from the numbers in annual ﬁnancial statements such as balance sheets and income statements; (2) “performance variables”: ﬁve variables that gauge a ﬁrm’s ﬁnancial performance on various dimensions; (3) two “nonﬁnancial variables” and four “off-balance-sheet variables,” which can be calculated using annual report disclosures; and (4) eight “market-related incentives” variables, which can be computed using either annual report disclosures, or stock price data, or both. We include all the variables under the category of “accruals quality-related variables” except for the four discretionary accrual measures (i.e., “modiﬁed jones discretionary accruals,” “performance-matched discretionary accruals,” “mean-adjusted absolute value of DD residuals,” and “studentized DD residuals”) because we wish to use variables that can be easily calculated from ﬁnancial statements.
+
+## Perols et al. (2017)
+
+The data used in this paper is actually the same as Perols (2008) and Perols (2011).
+
+## Bao et al. (2020)
+
+1. Sample Selection:
+
+-   CFRM database covers the period from 1982-05-17 to 2016-09-30.
+-   Hand-collect the period up to December 31, 2018 (AEER #4012)
+-   Omit year prior to 1979 because there are only 13 fraudulent firm-years.
+-   Tabulate up to 2014 because it takes several years for the SEC to finish the investigations of alleged fraud cases.
+-   There were 1,171 detected fraudulent ﬁrm-years in total over 1979–2014
+
+Primary test sample: 2003-2008
+
+Alternative test samples: 2003-2005, 2003-2011, 2003-2014
+
+Serial fraud: accounting fraud may span multiple consecutive reporting periods. Be careful do not leak the label!!!
+
+Use the last few years of our sample period (i.e. 2003-08) as the test period and all the earlier years as the **training period**. 
+
+2. Predictors
+
+-   Require no raw variable have more than 25% of its value missing (similar with Cecchini et al. 2010)
+-   Obtain a list of 24 raw financial data items during sample period 1991-2008.
+-   Only use data from readily available financial statements to predict accounting fraud
+-   Include all variables under the category of "accruals quality-related variables" 
+-   Exclude all nonfinancial variables and off-balance-sheet variables
+-   Keep "actual issuance" and "book-to-market" under the category "market-related incentives" because the raw financial data for both variables are readily available in Compustat.
+-   Replication of the Dechow et al. fraud prediction model (referred to as the basic Dechow et al. model) contains 11 ﬁnancial ratios from Dechow et al. [2011, table 3].
+-   Combine the raw data items from both lists to obtain a ﬁnal sample of 28 raw ﬁnancial data items for all of our subsequent fraud prediction models.
+-   Our Dechow et al. model contains 14 ﬁnancial ratios (the 11 ratios from the basic Dechow et al. model plus the three extra ratios from Cecchini et al., noted above).
+-   Our Cecchini et al. model constructs the ﬁnancial kernel using 28 raw ﬁnancial data items.
+
+3. Models
+
+4. Model Evaluations
+
+## Brown et al. (2020)

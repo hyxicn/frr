@@ -4,15 +4,38 @@ project:
 
 book:
   title: "Predict Financial Misconduct"
-  author: "Yan"
-  date: "12/3/2024"
+  reader-mode: true
+  #author: "Yanxi"
+  #date: "12/3/2024"
   site-url: https://hyxicn.github.io/pfm/
   repo-url: https://github.com/hyxicn/pfm/
   repo-branch: main
-  repo-actions: [edit]
+  repo-actions: [edit, issue, source]
+  sharing: [twitter, linkedin]
+  sidebar: 
+    #background: "#F5F5F5"
+    search: true
+  # comments:
+    #giscus:
+      #repo: hyxicn/pfm
   chapters:
     - index.qmd
     - intro.qmd
+    
+    - part: Prior studies
+      chapters: 
+        - literature_reviews.qmd
+        - replicates.qmd
+        
+    - part: This study
+      chapters: 
+        - sample.qmd
+        - models.qmd
+    
+    - part: Discussion
+      chapters: 
+        - 241220.qmd
+        
     - summary.qmd
     - references.qmd
 
@@ -20,8 +43,18 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: 
+        light: cosmo
+        dark: superhero
+    linestretch: 2.0
     code-link: true
+    code-fold: false
+    css: custom.css
+    #backgroundcolor: "#F5F5F5"
+    
   #pdf:
-   # documentclass: scrreprt
+  # documentclass: scrreprt
+  
+  # good themes: default, cosmo, flatly, lumen, minty, pulse, sandstone, solar, united
+  # favourites: minty, cosmo
 
