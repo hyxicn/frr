@@ -4,29 +4,148 @@
     "href": "index.html",
     "title": "Predict Financial Misconduct",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Research Progress\nWebsite updated on 04 Dec 2024.\nThis website serves both as a platform for updates to supervisors and records of the financial misconduct research project by Yanxi at Singapore Management University. I am grateful for feedback, and if you find errors, please let me know.\nThis website is generated with Quarto and hosted on GitHub Page.",
     "crumbs": [
-      "Preface"
+      "Research Progress"
+    ]
+  },
+  {
+    "objectID": "index.html#research-progress",
+    "href": "index.html#research-progress",
+    "title": "Predict Financial Misconduct",
+    "section": "",
+    "text": "Research proposal\nTerm paper presentation on ACCT702 (Fall 2024)\nFirst draft\n\nReplicate prior studies (ongoing)\nClean AAER filings\nPrepare data tables\nTest models",
+    "crumbs": [
+      "Research Progress"
+    ]
+  },
+  {
+    "objectID": "index.html#discussion",
+    "href": "index.html#discussion",
+    "title": "Predict Financial Misconduct",
+    "section": "Discussion",
+    "text": "Discussion\nNext discussion is scheduled on: MM/DD/YY",
+    "crumbs": [
+      "Research Progress"
     ]
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "What is financial misconduct?\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "literature_reviews.html",
+    "href": "literature_reviews.html",
+    "title": "Literature Review",
+    "section": "",
+    "text": "Here are a list of papers I am planning to replicate.",
+    "crumbs": [
+      "Prior studies",
+      "Literature Review"
+    ]
+  },
+  {
+    "objectID": "replicates.html",
+    "href": "replicates.html",
+    "title": "Replications",
+    "section": "",
+    "text": "Cecchini et al. (2010)\nHere I will present the results of replications. The results are arranged in chronological order. The journals include CAR(1), TAR(1), JAR(2), MS(1).\nI revisited this paper because Bao et al. (2020) selected their features based on it and Dechow’s paper.\nThe ﬁrst AAER available was #1,190 (issued October 28, 1999) and the last was #2,459 (issued July 11, 2006). There were a total of 1,157 AAERs in the initial sample.\n205 fraud company-years spanning the years of 1991–2003",
+    "crumbs": [
+      "Prior studies",
+      "Replications"
+    ]
+  },
+  {
+    "objectID": "replicates.html#dechow-et-al.-2011",
+    "href": "replicates.html#dechow-et-al.-2011",
+    "title": "Replications",
+    "section": "Dechow et al. (2011)",
+    "text": "Dechow et al. (2011)\nThis is where F-score originally from.\nWe catalog all the AAERs from AAER 1 through AAER 2261 spanning May 17th, 1982 through June 10th, 2005.\nThe original AAERs are the starting point for collecting data. Copies of the AAERs are obtained from the SEC website and the LexisNexis database. Each AAER is separately examined to identify whether it involves an alleged GAAP violation. In cases where a GAAP violation is involved, the reporting periods that were alleged to be misstated are identiﬁed.\nDechow et al. [2011, table 3] suggest four types of fraud determinants: (1) “accruals quality-related variables”: nine variables, which can be calculated from the numbers in annual ﬁnancial statements such as balance sheets and income statements; (2) “performance variables”: ﬁve variables that gauge a ﬁrm’s ﬁnancial performance on various dimensions; (3) two “nonﬁnancial variables” and four “off-balance-sheet variables,” which can be calculated using annual report disclosures; and (4) eight “market-related incentives” variables, which can be computed using either annual report disclosures, or stock price data, or both. We include all the variables under the category of “accruals quality-related variables” except for the four discretionary accrual measures (i.e., “modiﬁed jones discretionary accruals,” “performance-matched discretionary accruals,” “mean-adjusted absolute value of DD residuals,” and “studentized DD residuals”) because we wish to use variables that can be easily calculated from ﬁnancial statements.",
+    "crumbs": [
+      "Prior studies",
+      "Replications"
+    ]
+  },
+  {
+    "objectID": "replicates.html#perols-et-al.-2017",
+    "href": "replicates.html#perols-et-al.-2017",
+    "title": "Replications",
+    "section": "Perols et al. (2017)",
+    "text": "Perols et al. (2017)\nThe data used in this paper is actually the same as Perols (2008) and Perols (2011).",
+    "crumbs": [
+      "Prior studies",
+      "Replications"
+    ]
+  },
+  {
+    "objectID": "replicates.html#bao-et-al.-2020",
+    "href": "replicates.html#bao-et-al.-2020",
+    "title": "Replications",
+    "section": "Bao et al. (2020)",
+    "text": "Bao et al. (2020)\n\nSample Selection:\n\n\nCFRM database covers the period from 1982-05-17 to 2016-09-30.\nHand-collect the period up to December 31, 2018 (AEER #4012)\nOmit year prior to 1979 because there are only 13 fraudulent firm-years.\nTabulate up to 2014 because it takes several years for the SEC to finish the investigations of alleged fraud cases.\nThere were 1,171 detected fraudulent ﬁrm-years in total over 1979–2014\n\nPrimary test sample: 2003-2008\nAlternative test samples: 2003-2005, 2003-2011, 2003-2014\nSerial fraud: accounting fraud may span multiple consecutive reporting periods. Be careful do not leak the label!!!\nUse the last few years of our sample period (i.e. 2003-08) as the test period and all the earlier years as the training period.\n\nPredictors\n\n\nRequire no raw variable have more than 25% of its value missing (similar with Cecchini et al. 2010)\nObtain a list of 24 raw financial data items during sample period 1991-2008.\nOnly use data from readily available financial statements to predict accounting fraud\nInclude all variables under the category of “accruals quality-related variables”\nExclude all nonfinancial variables and off-balance-sheet variables\nKeep “actual issuance” and “book-to-market” under the category “market-related incentives” because the raw financial data for both variables are readily available in Compustat.\nReplication of the Dechow et al. fraud prediction model (referred to as the basic Dechow et al. model) contains 11 ﬁnancial ratios from Dechow et al. [2011, table 3].\nCombine the raw data items from both lists to obtain a ﬁnal sample of 28 raw ﬁnancial data items for all of our subsequent fraud prediction models.\nOur Dechow et al. model contains 14 ﬁnancial ratios (the 11 ratios from the basic Dechow et al. model plus the three extra ratios from Cecchini et al., noted above).\nOur Cecchini et al. model constructs the ﬁnancial kernel using 28 raw ﬁnancial data items.\n\n\nModels\nModel Evaluations",
+    "crumbs": [
+      "Prior studies",
+      "Replications"
+    ]
+  },
+  {
+    "objectID": "replicates.html#brown-et-al.-2020",
+    "href": "replicates.html#brown-et-al.-2020",
+    "title": "Replications",
+    "section": "Brown et al. (2020)",
+    "text": "Brown et al. (2020)",
+    "crumbs": [
+      "Prior studies",
+      "Replications"
+    ]
+  },
+  {
+    "objectID": "sample.html",
+    "href": "sample.html",
+    "title": "Sample",
+    "section": "",
+    "text": "Here, I will describe how I construct our sample and include details about data preprocessing.",
+    "crumbs": [
+      "This study",
+      "Sample"
+    ]
+  },
+  {
+    "objectID": "models.html",
+    "href": "models.html",
+    "title": "Model",
+    "section": "",
+    "text": "This is the model part.",
+    "crumbs": [
+      "This study",
+      "Model"
+    ]
+  },
+  {
+    "objectID": "241220.html",
+    "href": "241220.html",
+    "title": "24-12-20",
+    "section": "",
+    "text": "This is a discussion page for the next meeting\n\nWhat I did\nMy questions\nNext step",
+    "crumbs": [
+      "Discussion",
+      "24-12-20"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Summary"
     ]
   },
   {
