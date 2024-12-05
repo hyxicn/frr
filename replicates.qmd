@@ -4,6 +4,7 @@ Here I will present the results of replications. The results are arranged in chr
 
 ```{r echo=FALSE}
 # Load the DT library
+install.packages("DT")
 library(DT)
 
 # Create a data frame with the data
